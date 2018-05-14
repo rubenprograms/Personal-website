@@ -1,1 +1,1 @@
-This project is to put into practice what I learn about the development of dynamic web pages.
+Personal website written in HTML, CSS, JavaScript, and PHP. An important goal of this project is to develop a dynamic website with an appealing user interface. I will use the website as a portfolio, to talk about the technical projects I am working on.
