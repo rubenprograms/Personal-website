@@ -16,12 +16,12 @@
 			<div id="logo">
             <!--DEBUG: Image that should go in the logo<div class="media-content"></div>-->
             <h3>
-               <a href="#">Ruben Gonzalez</a>
+               <a onclick="loadHomeContent()">Ruben Gonzalez</a>
             </h3>
-			</div>X
+			</div>
 			<ul id="navigation-links"> 
 				<li><a onclick="loadHomeContent()">Home</a></li>
-				<li><a href="about.html">About</a></li>
+				<li><a onclick="loadAboutContent()">About</a></li>
 			</ul>
 			<br style="clear:both"/>
 		</nav>
@@ -34,26 +34,7 @@
 			</aside>
 
 			<main id="main-content">
-            <!--<article class="set-height">-->
-               <article>
-					<h3>Hello, World!</h3>
-					<div class="date-below-title"> 
-						<time datetime="09-09-2017">September 9th, 2017</time>
-						<br style="clear:both"/>
-               </div>
-               <!-- DEBUG
-					<div class="media-content">
-               </div>
-               -->
-					<!--DEBUG <p class="set-height">-->
-               <p>
-                  Hello, World! I am still working on this website. More to come. Cheers.
-					</p>
-					<!--DEBUG<a href="about.html">See more</a>-->
-				</article>
-
 			</main>
-
 			<br style="clear:both"/>
 		</div>
 
@@ -64,6 +45,9 @@
 			</a>
 		</footer>
 
+		<script>
+			loadHomeContent()
+		</script>
 	</body>
 
 
