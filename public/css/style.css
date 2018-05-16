@@ -1,13 +1,11 @@
-body
-{
+body {
     padding: 0px;
     margin: 0px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 /**Styling for elements that need to yet be implemented*/
-.implement 
-{
+.implement {
     background-color: yellow;
     color: red;
     font-weight: bolder;
@@ -16,23 +14,20 @@ body
 
 /**Styling for the navigation bar.*/
 
-#navigation-bar
-{
+#navigation-bar {
     margin: 0px;
     background-color: #8CB4D2; /*Same as that of the footer element.*/
     height: 70px; /*The ul#navigation-links element containing the links must have this height, too.*/
 }
 
-#navigation-bar > #logo
-{
+#navigation-bar > #logo {
     float: left;
     margin: 0px 0px 0px 2.5%;
     padding: 0px;
     height: 70px; /*Same height as that one of the #navigation-bar*/
 }
 
-#navigation-bar > ul#navigation-links
-{
+#navigation-bar > ul#navigation-links {
     float: right;
     margin: 0px 1.5% 0px 0px;
     padding: 0px;
@@ -40,8 +35,7 @@ body
     height: 70px; /*Same height as that one of the #navigation-bar*/
 }
 
-#navigation-bar > #logo > h3
-{
+#navigation-bar > #logo > h3 {
     display: inline-block;
     margin: 0px;
     padding: 0px;
@@ -51,8 +45,7 @@ body
     line-height: 70px; /*Same height as the height of the container so the text in it looks centered.*/
 }
 
-#navigation-bar > #logo > h3 > a 
-{
+#navigation-bar > #logo > h3 > a {
 
     text-decoration: none; /*Remove underline from the hyperlink.*/
     color: black;
@@ -62,38 +55,23 @@ body
     height: 70px; /*Same height as that one of the #navigation-bar*/
 }
 
-/*DEBUG: This rule set is for the image that should go in the logo.
-#navigation-bar > #logo > div.media-content
-{
-   display: inline-block;
-   width: 70px;
-   height: 70px; /*Same height as that one of the #navigation-bar*//*
-   margin: 0px;
-   border: 1px solid greenyellow;
-}
-*/
-
-#navigation-bar > #logo > h3 > a:hover 
-{
+#navigation-bar > #logo > h3 > a:hover {
     background-color:rgba(255, 240, 97, 0.91);
 } 
 
 
-#navigation-bar > ul#navigation-links > li 
-{
+#navigation-bar > ul#navigation-links > li {
     display: inline-block;
     margin: 0px 0px 0px -5px;
     padding: 0px;
     height: 70px; /*Same height as that one of the #navigation-bar*/
 }
 
-#navigation-bar > ul#navigation-links > li:first-child
-{
+#navigation-bar > ul#navigation-links > li:first-child {
     margin-left: 0px;
 }
 
-#navigation-bar > ul#navigation-links > li > a 
-{
+#navigation-bar > ul#navigation-links > li > a {
     color: #FFFFFF;
     text-decoration: none;
     display: inline-block;
@@ -105,114 +83,95 @@ body
     line-height: 70px; /*Same height as the height of the container so the text in it looks centered.*/
 }
 
-#navigation-bar > ul#navigation-links > li > a:hover
-{
+#navigation-bar > ul#navigation-links > li > a:hover {
     background-color: rgba(255, 240, 97, 0.91);
 }
 
 /*Styling for the main content of the page.*/
-#wrapper
-{
+#wrapper {
     padding: 10px; /*Come back to check this. You will probably leave this as is.*/ 
     width: 80%;
     margin: auto;
 }
 
-aside.righthand-side-section 
-{
+aside.righthand-side-section {
     float: right;
     width: 300px;
 }
 
-#main-content
-{
+#main-content {
     margin-right: 305px; /*This depends on the width value for aside.righthand-side-section.*/
 }
 
-aside.righthand-side-section > form
-{
+aside.righthand-side-section > form {
     margin: 10px;
     padding: 10px; /*DEBUG?*/
     text-align: justify;
 }
-#main-content > article
-{
+
+#main-content > article {
     margin: 10px;
 }
 
-#main-content > article.set-height
-{
-
+#main-content > article.set-height {
     height: 600px;
 }
 
-#main-content > article > h3
-{
+#main-content > article > h3 {
     margin: 10px;
     font-weight: bolder larger;
 }
 
-#main-content > article > div.date-below-title
-{
+#main-content > article > div.date-below-title {
     margin: 0px 10px 10px 10px;
     padding: 0px;
     height: 15px;
 }
 
-#main-content > article > div.date-below-title > time
-{
+#main-content > article > div.date-below-title > time {
     float: right;
     margin: 0px;
     font-size: 10px;
 }
 
-#main-content > article > div.media-content
-{
+#main-content > article > div.media-content {
     width: 640px;
     height: 360px;
     margin: auto;
     overflow: hidden;
 }
 
-#main-content > article > p
-{
+#main-content > article > p {
     margin: 10px;
     margin-bottom: 0px;
     text-align: justify;
     color: #333;
 }
 
-#main-content > article > p.set-height
-{
+#main-content > article > p.set-height {
     height: 130px;
 }
 
-#main-content > article > a 
-{
+#main-content > article > a  {
     float: right;
 }
 
 /*Styling for the footer section*/
-
-footer
-{
+footer {
     margin-top: 10px;  /*DEBUG*/
     text-align: center;
     padding: 10px;
     background-color: #8CB4D2; /*Same as that of the #navigation-bar*/
 }
 
-footer > a 
-{
+footer > a {
     padding-right: 80px;
 }
 
-footer > a:last-child 
-{
+footer > a:last-child {
     padding-right: 0px;
 }
 
-footer > a > img 
-{
+footer > a > img {
     width: 60px;
 }
