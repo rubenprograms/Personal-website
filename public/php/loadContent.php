@@ -24,5 +24,5 @@
    } 
    else 
    {
-      // TODO Implement this exceptional case.
+      http_response_code(400);
    }

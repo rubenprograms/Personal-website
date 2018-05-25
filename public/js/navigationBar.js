@@ -29,19 +29,17 @@ function loadAboutContent() {
 function loadContent(pageName) {
    var requestObject = getXMLHttpRequestObject();
    if (requestObject == false) {
-      // TODO Implement
-      // 1. Display an alert saying no content could be loaded because Ajax
-      // is not supported. 
-
-      // 2. Modify content of element with ID main-content to empty.
+      document.alert("The current browser does not support Ajax; no content can be loaded.");
+      document.getElementById('main-content').innerHTML = "";
+   } else {
+      // Make Ajax request. Parameter noCache is sent - with a different value every time - 
+      // to workaround the caching of GET requests, which can produce unupdated returns from the
+      // server.
+      var noCache = "noCache=" + Math.random() * 1000;
+      requestObject.open("GET", "php/loadContent.php?pageRequested="+ pageName + "&" + noCache, true);
+      requestObject.onreadystatechange = updateMainContent;
+      requestObject.send(null);
    }
-   // Make Ajax request. Parameter noCache is sent - with a different value every time - 
-   // to workaround the caching of GET requests, which can produce unupdated returns from the
-   // server.
-   var noCache = "noCache=" + Math.random() * 1000;
-   requestObject.open("GET", "../php/loadContent.php?pageRequested="+ pageName + "&" + noCache, true);
-   requestObject.onreadystatechange = updateMainContent;
-   requestObject.send(null);
 }
 
 /** 
@@ -84,7 +82,7 @@ function updateMainContent() {
             alert("Ajax error: No data received");
          }
       } else {
-         alert( "Ajax error: " + this.statusText);
+         alert( "Ajax error. Status " + this.status + ": " + this.statusText);
       }
    }
 }
