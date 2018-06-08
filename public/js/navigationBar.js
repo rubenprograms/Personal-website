@@ -74,7 +74,7 @@ function sendMessage() {
          parameters += field.getAttribute("name") + "=" + field.value + "&";
       }
       parameters = parameters.substr(0, parameters.length - 1);
-      request.open("POST", "../php/userSendMessage.php", true); // TODO Modify the url of php script so it runs on ubc web server.
+      request.open("POST", "php/userSendMessage.php", true);
       request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
       request.onreadystatechange = sendMessageServerResponse;
       request.send(parameters);
