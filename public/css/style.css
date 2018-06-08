@@ -94,31 +94,31 @@ body {
     margin: auto;
 }
 
-aside.righthand-side-section {
-    float: right;
-    width: 300px;
+#wrapper > form {
+    margin: 10px;
+}
+
+form > input, textarea, button {
+    width: 50%;
 }
 
 #main-content {
-    margin-right: 305px; /*This depends on the width value for aside.righthand-side-section.*/
-}
-
-aside.righthand-side-section > form {
-    margin: 10px;
-    padding: 10px; /*DEBUG?*/
-    text-align: justify;
+    margin-right: 305px;
 }
 
 #main-content > article {
     margin: 10px;
 }
 
+#main-content > article > * {
+    margin: 0xp;
+}
+
 #main-content > article.set-height {
     height: 600px;
 }
 
-#main-content > article > h3 {
-    margin: 10px;
+#wrapper > h3 {
     font-weight: bolder larger;
 }
 
@@ -134,15 +134,7 @@ aside.righthand-side-section > form {
     font-size: 10px;
 }
 
-#main-content > article > div.media-content {
-    width: 640px;
-    height: 360px;
-    margin: auto;
-    overflow: hidden;
-}
-
 #main-content > article > p {
-    margin: 10px;
     margin-bottom: 0px;
     text-align: justify;
     color: #333;
