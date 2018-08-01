@@ -171,21 +171,6 @@ function updateMainContent() {
 }
 
 /**
- * Inserts the navigation bar common to all pages in the website into the calling webpage.
- */
-function loadNavigationBar() {
-   var request = getXMLHttpRequestObject();
-   if (request == false) {
-      window.alert("Ajax not supported by this browser. Loading navigation bar failed.");
-   }
-   var noCache = "&noCache=" + (Math.random() * 1000);
-   var fileName = "navigationBar";
-   request.open("GET", "php/getReusableHTML.php?fileName=" + fileName + noCache);
-   request.onreadystatechange = insertNavigationBar; 
-   request.send(null);
-}
-
-/**
  * Callback for the onreadystatechange property of the XMLHttpRequest object used for 
  * loading the navigation bar into the webpage.
  */
