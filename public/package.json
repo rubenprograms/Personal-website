@@ -1,0 +1,27 @@
+{
+  "name": "my_website",
+  "version": "1.0.0",
+  "description": "Professional website built with the MEAN stack.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "computer",
+    "science",
+    "student",
+    "developer",
+    "javascript",
+    "mean",
+    "stack"
+  ],
+  "author": "Ruben Gonzalez",
+  "license": "ISC",
+  "dependencies": {
+    "express": "latest",
+    "consolidate": "latest",
+    "path": "latest",
+    "morgan": "1.7.0"
+  }
+}
